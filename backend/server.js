@@ -12,7 +12,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ["http://localhost:5173", "https://personal-portfolio-theta-azure-50.vercel.app/"], 
+  origin: ["https://personal-portfolio-theta-azure-50.vercel.app", "http://localhost:5173"], 
   methods: ["GET", "POST"],
   credentials: true
 }));
