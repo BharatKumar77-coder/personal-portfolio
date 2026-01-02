@@ -11,7 +11,11 @@ const General = require('./models/General');
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: ["http://localhost:5173", "https://personal-portfolio-theta-azure-50.vercel.app/"], 
+  methods: ["GET", "POST"],
+  credentials: true
+}));
 app.use(express.json());
 
 // Database Connection
