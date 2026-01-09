@@ -11,10 +11,12 @@ export const NAV_LINKS = [
 export const HERO_CONTENT = {
   name: "Bharat Kumar",
   role: "Full Stack Developer",
-  tagline: "I build scalable and user-friendly web applications.",
+  tagline: "I build scalable full-stack web applications using MERN stack.",
 };
 
-export const ABOUT_CONTENT = `I am a 3rd-year Computer Science student passionate about building full-stack web applications. With a strong foundation in the MERN stack and a curiosity for AI/ML, I focus on writing clean, efficient code. I am currently looking for internship opportunities where I can contribute to real-world projects and continue learning.`;
+export const ABOUT_CONTENT = {
+  text: "I'm a final-year Computer Science student with hands-on experience in building full-stack web applications. I specialize in the MERN stack and enjoy designing clean APIs, scalable backends, and responsive user interfaces. Currently seeking full-time or internship opportunities where I can contribute to real-world products and grow as a software engineer."
+};
 
 export const SKILLS = [
   {
@@ -24,16 +26,16 @@ export const SKILLS = [
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express.js"],
+    items: ["Node.js", "Express.js", "REST APIs", "JWT Authentication"],
     icon: <Server className="w-6 h-6 text-accent" />,
   },
   {
     category: "Database",
-    items: ["MongoDB"],
+    items: ["MongoDB", "SQL"],
     icon: <Database className="w-6 h-6 text-accent" />,
   },
   {
-    category: "Tools",
+    category: "Tools & Platforms",
     items: ["Git", "GitHub", "Postman", "Vercel"],
     icon: <Settings className="w-6 h-6 text-accent" />,
   },
@@ -41,8 +43,9 @@ export const SKILLS = [
 
 export const PROJECTS = [
   {
+    id: "job-portal",
     title: "Job Portal Web App",
-    description: "A comprehensive platform connecting job seekers with recruiters.",
+    description: "Full-stack job portal with recruiter and applicant roles, secure authentication, and resume management.",
     techStack: ["React", "Node.js", "Express", "MongoDB"],
     features: [
       "User authentication for seekers and recruiters",
@@ -50,42 +53,44 @@ export const PROJECTS = [
       "Real-time status updates"
     ],
     links: {
-      demo: "#", // Replace with actual URL later
-      github: "#",
+      demo: "https://job-portal-web-app-beta.vercel.app/",
+      github: "https://github.com/BharatKumar77-coder/job-portal-web-app",
     }
   },
   {
+    id: "rentify",
     title: "Rentify",
-    description: "A hassle-free property rental platform.",
+    description: "MERN-based equipment rental platform for cameras, drones, and laptops.",
     techStack: ["React", "Tailwind", "Firebase"],
     features: [
-      "Property listing with image uploads",
-      "Advanced filtering by location and price",
-      "Direct owner-tenant communication"
+      "Product CRUD with Mongoose",
+      "Category-based filtering",
+      "Reusable API-driven UI"
     ],
     links: {
-      demo: "#",
-      github: "#",
+      demo: "https://rentify-platform-silk.vercel.app/",
+      github: "https://github.com/BharatKumar77-coder/rentify-platform",
     }
   },
   {
-    title: "Movie Recommender",
-    description: "AI-powered movie suggestion system.",
+    id: "movie-recommender",
+    title: "Movie Recommender System",
+    description: "Content-based movie recommendation system using similarity analysis.",
     techStack: ["Python", "Flask", "React", "ML"],
     features: [
-      "Content-based filtering algorithm",
-      "Interactive user interface",
-      "Personalized watchlist creation"
+      "Cosine similarity recommendations",
+      "Top-N movie suggestions",
+      "Feature-based data analysis"
     ],
     links: {
-      demo: "#",
-      github: "#",
+      demo: "https://github.com/BharatKumar77-coder/movie-recommender-system",
+      github: "https://github.com/BharatKumar77-coder/movie-recommender-system",
     }
   },
 ];
 
 export const CONTACT_INFO = {
-  email: "your.email@example.com", // Update this
-  linkedin: "https://linkedin.com/in/yourprofile", // Update this
-  github: "https://github.com/yourusername", // Update this
+  email: "bharatkumarch1122@gmail.com",
+  linkedin: "https://www.linkedin.com/in/bharat-kumar-69a735257/",
+  github: "https://github.com/BharatKumar77-coder"
 };

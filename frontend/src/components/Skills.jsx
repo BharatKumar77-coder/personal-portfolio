@@ -1,14 +1,4 @@
-import { Layout, Server, Database, Settings, Terminal, Code2 } from "lucide-react";
-
-// Map strings from DB to actual components
-const iconMap = {
-  "Layout": <Layout className="w-6 h-6 text-accent" />,
-  "Server": <Server className="w-6 h-6 text-accent" />,
-  "Database": <Database className="w-6 h-6 text-accent" />,
-  "Settings": <Settings className="w-6 h-6 text-accent" />,
-  "Terminal": <Terminal className="w-6 h-6 text-accent" />,
-  "Code2": <Code2 className="w-6 h-6 text-accent" />
-};
+import { Code2 } from "lucide-react";
 
 const Skills = ({ skills }) => {
   if (!skills) return null;
@@ -27,8 +17,8 @@ const Skills = ({ skills }) => {
           >
             <div className="flex items-center gap-3 mb-4">
               <div className="p-2 bg-primary rounded-lg border border-white/10">
-                {/* Fallback to Code2 icon if no match found */}
-                {iconMap[skill.category] || <Code2 className="w-6 h-6 text-accent" />}
+                {/* Use icon from props, fallback to Code2 */}
+                {skill.icon || <Code2 className="w-6 h-6 text-accent" />}
               </div>
               <h3 className="text-xl font-semibold text-textMain">{skill.category}</h3>
             </div>

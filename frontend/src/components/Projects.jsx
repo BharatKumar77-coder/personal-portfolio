@@ -13,7 +13,7 @@ const Projects = ({ projects }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div
-              key={project._id} // Use MongoDB _id
+              key={project.id} // Use static id
               className="group bg-secondary rounded-2xl border border-white/5 overflow-hidden hover:border-accent/30 transition-all duration-300"
             >
               <div className="p-6">
