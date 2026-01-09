@@ -61,7 +61,7 @@ export const PROJECTS = [
     id: "rentify",
     title: "Rentify",
     description: "MERN-based equipment rental platform for cameras, drones, and laptops.",
-    techStack: ["React", "Tailwind", "Firebase"],
+    techStack: ["React", "Node.js", "Express", "MongoDB"],
     features: [
       "Product CRUD with Mongoose",
       "Category-based filtering",
